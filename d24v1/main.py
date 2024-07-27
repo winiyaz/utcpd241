@@ -13,5 +13,5 @@
 # 	contents = f.read()
 # 	print(contents)
 
-with open("my.txt", mode="a") as f:
+with open("panty.txt", mode="a") as f: # if file doesnt exist, it will be written
 	f.write("\nsuck")
