@@ -19,3 +19,13 @@ with open("h.txt", mode="w") as f:
 	# Iterate through the array and write each name to the file on a new line
 	for name in h1:
 		f.write(name + "\n")
+
+
+def name_v():
+	with open("v.txt", mode="w") as f:
+		# Iterate through the array and write each name to the file on a new line
+		for name in h1:
+			f.write(name + "\n")
+
+
+name_v()
