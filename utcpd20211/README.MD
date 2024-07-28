@@ -11,3 +11,7 @@ According to D24 , first work will be continued here and then move to the actual
 # Old Looks like this 
 
 <img src="https://raw.githubusercontent.com/winiyaz/UTCP-D2021-1/master/snkv3/o.gif" width="50%">
+
+1. Bug is that game deesnt end when hitting the wall.
+2. The score is written in 'panty.smell' which is a text file
+3. 

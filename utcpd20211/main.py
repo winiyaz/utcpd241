@@ -3,10 +3,9 @@
 import time
 from turtle import Screen
 
-from snake import Snake
-
 from food import Food
 from score import Score
+from snake import Snake
 
 scn = Screen()
 scn.setup(width=600, height=600)
@@ -44,15 +43,16 @@ while game_is_on:
 	# Detect Collision with wall
 	if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
 		score.reset()
+		game_is_on = False
+		score.game_over()
 
 	# Detect collision with tail
-	for segment in snake.segments:
+	for segment in snake.segments[1:]:
 		if snake.head.distance(segment) < 10:
-			pass
-		elif snake.head.distance(segment) < 10:
-
 			score.reset()
 			snake.reset()
+			game_is_on = False
+			score.game_over()
 
 # --- #
 scn.exitonclick()  # Exit on clic
